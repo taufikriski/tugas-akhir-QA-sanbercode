@@ -11,4 +11,14 @@ describe('Open Kasir Demo', () => {
 
         await assert.strictEqual(currentURL, expectedURL, 'URL tidak sesaui. Actual : ${currentURL}, Expected : ${expectedURL}');
     })
+    it('should open browser dan redirect to kasirdemo "Wrong" expected', async () =>{
+        // buka browser dan url
+        await browser.url('/')
+        
+        const currentURL = await browser.getUrl();
+        const expectedURL =  'https://kasirdemo.vercel.app/logina'
+
+        await assert.strictEqual(currentURL,expectedURL, `URL Tidak sesuai, Actual: ${currentURL}, Expected : ${expectedURL}`);
+    })
+
 })
