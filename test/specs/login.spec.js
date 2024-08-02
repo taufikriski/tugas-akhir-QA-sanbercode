@@ -22,7 +22,7 @@ describe('KasirDemo Login Test', () => {
         await expect(browser).toHaveUrl('https://kasirdemo.vercel.app/login')
     
     })
-    it ('Should login succesfully with invalid email', async () => {
+    it ('Should login failed with invalid email', async () => {
         //Buka browser dan url
         await browser.url('/')
 
