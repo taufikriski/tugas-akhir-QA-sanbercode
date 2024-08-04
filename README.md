@@ -1,5 +1,7 @@
 How to run?
-1. npm run wdio
+
+1. before you run this, just make sure edit tag @basic for basic login test feature or @tdd for login test with tdd
+2. just type npm run wdio in terminal
 
 FINAL PROJECT
 
